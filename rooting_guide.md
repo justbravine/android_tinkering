@@ -1,22 +1,73 @@
-## Why would i want Root?
-Root is basically obtaining Super User Permission to do pretty much anything at all in your Android device. From system-level debloating to major UI modifications and so on. Rooting has perks, lots of them, but it also has it's downsides such as voiding your warranty, loss of safetynet and playintegrity and blocked access to banking applications. These problems do have workarounds.
-## Where do i start?
-You will need a Compter
-You must have downloaded and extracted your Device firmware zip file.
-You must have unlocked your bootloader.
-DO NOT SKIP STEP 2 AND 3!
+# Rooting Guide
+
+## Why Would I Want Root?
+
+Rooting essentially grants you Super User permissions, allowing you to perform advanced modifications on your Android device. This includes system-level debloating, major UI customizations, and more. While rooting has many perks, it also comes with downsides, such as:
+
+- Voiding your warranty.
+- Losing SafetyNet and Play Integrity compatibility.
+- Losing access to certain banking applications.
+
+Fortunately, there are workarounds for these issues.
+
+---
+
+## Where Do I Start?
+
+Before proceeding, ensure you have the following:
+
+1. A **computer**.
+2. Your device's **firmware zip file** downloaded and extracted.
+3. An **unlocked bootloader**.
+
+**Important:** Do not skip steps 2 and 3!
+
+---
+
 ## Steps to Follow
-First off, download the latest stable magisk from the Repository
-Now you will need the boot.img of your device which can be gotten inside your device firmware zip file.
-Also in your firmware is the vbmeta.img file which is REQUIRED to DISABLE VERITY and BOOT VERIFICATION!
-Put the boot.img file into your device and launch the Magisk application. Note: The boot image must be patched in the device that it will be flashed into. e.g Patch Tecno Spark 7 boot.img with Tecno Spark 7 and flash it to Tecno SPark 7.
-Tap the "Install" button and select file for patching.
-Search for your .img file and click it.
-Once the patching process is complete, copy the file located in your Downloads Folder to your Computer along with the vbmeta.img located also in your firmware. This will be used to disable AVB (Android Verified Boot).
-On your computer, put both image files in a folder and open your terminal in that folder.
-Connect your device and run in terminal adb reboot bootloader
-You must run the AVB disabling command before and after the boot image flashing command to avoid bootlooping
-run fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img to disable AVB
-Now run fastboot flash boot patchedboot.img
-Run the AVB command again and then, fastboot reboot
+
+### Step 1: Download Magisk
+- Download the latest stable version of **Magisk** from the official repository.
+
+### Step 2: Extract Boot and vbmeta Images
+- Locate the `boot.img` file inside your device's firmware zip file.
+- Also, find the `vbmeta.img` file in the firmware. This is required to disable **verity** and **boot verification**.
+
+### Step 3: Patch the Boot Image
+1. Transfer the `boot.img` file to your device.
+2. Open the **Magisk** application on your device.
+   - **Note:** The boot image must be patched on the same device it will be flashed into. For example, patch the `Tecno Spark 7 boot.img` on a Tecno Spark 7 device.
+3. Tap the **Install** button and select the file for patching.
+4. Locate and select your `.img` file.
+5. Once the patching process is complete, the patched file will be saved in your **Downloads** folder.
+
+### Step 4: Prepare Files for Flashing
+- Copy the patched boot image (e.g., `patchedboot.img`) from your device's Downloads folder to your computer.
+- Also, copy the `vbmeta.img` file from your firmware to your computer.
+- Place both files in a single folder on your computer.
+
+### Step 5: Flash the Images
+1. Open a terminal in the folder containing the image files.
+2. Connect your device to the computer via USB.
+3. Reboot your device into bootloader mode by running:
+   ```bash
+   adb reboot bootloader
+   ```
+4. You must run the AVB disabling command before and after the boot image flashing command to avoid bootlooping:
+   ```bash
+   fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+   ```
+5. Now run:
+   ```bash
+   fastboot flash boot patchedboot.img
+   ```
+6. Run the AVB command again:
+   ```bash
+   fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+   ```
+7. Finally, reboot your device:
+   ```bash
+   fastboot reboot
+   ```
+
 With all that done, you should be booted with Magisk properly installed.
