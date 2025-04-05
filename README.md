@@ -1,8 +1,6 @@
-# android_tinkering
-
 # Android Tinkering Projects & Notes  
 
-👋 Hi! I’m a Software Engineering student passionate about **Android system customization**. This repo documents my experiments with:  
+This repo documents my experiments with:  
 
 - **Rooting** (Magisk, custom recoveries like TWRP)  
 - **GSI (Generic System Image) Flashing** (e.g., Pixel Experience, LineageOS)  
@@ -16,8 +14,8 @@
 - Python/Bash for automation  
 
 ## Recent Experiments  
-- [ ] Successfully rooted a Redmi Note 9 using Magisk  
-- [ ] Flashed a GSI ROM (e.g., Pixel Experience)  
+- [ ] Successfully rooted an android tv using Magisk  
+- [ ] Flashed a GSI ROM (Evolution X)  
 - [ ] Wrote a Bash script to automate app backups via ADB  
 
 *(I’ll keep updating this as I explore more!)*
