@@ -11,7 +11,26 @@ Rooting essentially grants you Super User permissions, allowing you to perform a
 Fortunately, there are workarounds for these issues.
 
 ---
+## 🔍 Proof of Modifications
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>Magisk Root</strong></td>
+      <td align="center"><strong>Root Verified</strong></td>
+    </tr>
+    <tr>
+      <td><img src="proofs/magisk_details.png" width="200"></td>
+      <td><img src="proofs/root_checker.png" width="200"></td>
+    </tr>
+    <tr>
+      <td align="center">Zygisk enabled (v27.2)</td>
+      <td align="center">Root access confirmed</td>
+    </tr>
+  </table>
+  <em>Tecno KF6i (Android 15)</em>
+</div> 
 
+---
 ## Where Do I Start?
 
 Before proceeding, ensure you have the following:
