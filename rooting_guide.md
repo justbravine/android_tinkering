@@ -71,3 +71,23 @@ Before proceeding, ensure you have the following:
    ```
 
 With all that done, you should be booted with Magisk properly installed.
+
+---
+
+## Issues and Their Solutions with Magisk (FAQs)
+
+### I updated Magisk and now Zygisk doesn't work.
+Uninstall/restore the previous **Zygisk-compatible** version of the Magisk app, re-patch the stock boot image, and repeat the flashing process.
+
+---
+
+### I flashed a newly patched image, but my device doesn't boot.
+Run the **disable verity command** before and after flashing a patched boot image for safety measures! If you still can't boot, flash your stock `boot.img` and try another version of the Magisk app for the patching process.
+
+---
+
+### I flashed a Magisk module, and now the device keeps rebooting. Please help!
+1. Wait for the device to reboot. When the splash screen appears, wait 2 seconds and long-press **Volume Down** until the device boots.
+2. This will boot the device into **Safe Mode**, disabling all third-party apps and Magisk modules.
+3. From here, reboot back to the system, open Magisk, and remove the problematic module.
+4. Reboot once more, and your device should work normally.
