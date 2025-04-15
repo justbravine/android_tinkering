@@ -36,8 +36,8 @@ Fortunately, there are workarounds for these issues.
 Before proceeding, ensure you have the following:
 
 1. A **computer**.
-2. Your device's **firmware zip file** downloaded and extracted.
-3. An **unlocked bootloader**.
+2. Your device's [**firmware zip file**](google) downloaded and extracted.
+3. An **unlocked bootloader**.(google is your friend -how to unlock bootloader for ******)
 
 **Important:** Do not skip steps 2 and 3!
 
