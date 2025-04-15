@@ -36,8 +36,8 @@ Fortunately, there are workarounds for these issues.
 Before proceeding, ensure you have the following:
 
 1. A **computer**.
-2. Your device's [**firmware zip file**](google) downloaded and extracted.
-3. An **unlocked bootloader**.(google is your friend -how to unlock bootloader for ******)
+2. Your device's [**firmware zip file**](google.com) downloaded and extracted.
+4. An **unlocked bootloader**.(google is your friend - how to unlock bootloader for ******)
 
 **Important:** Do not skip steps 2 and 3!
 
@@ -46,7 +46,7 @@ Before proceeding, ensure you have the following:
 ## Steps to Follow
 
 ### Step 1: Download Magisk
-- Download the latest stable version of **Magisk** from the official repository.
+- Download the latest stable version of [**Magisk**](https://github.com/topjohnwu/Magisk) from the official repository.
 
 ### Step 2: Extract Boot and vbmeta Images
 - Locate the `boot.img` file inside your device's firmware zip file.
